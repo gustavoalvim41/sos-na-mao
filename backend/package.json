@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "- [ ] Cadastro de usuário: email, senha (via Supabase Auth)\r - [ ] Login/Logout: via Supabase Auth\r - [ ] Recuperação de senha: email de redefinição via Supabase\r - [ ] Atualização de perfil: nome, telefone, contato de emergência\r - [ ] Validação de autenticação: middleware Express para proteger endpoints",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.86.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
