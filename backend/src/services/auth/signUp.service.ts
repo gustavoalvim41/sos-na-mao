@@ -1,4 +1,4 @@
-import { supabase } from "../db";
+import { supabase } from "../../db";
 
 export default class SignUpService {
   static async signUp(email: string, password: string, name: string) {
