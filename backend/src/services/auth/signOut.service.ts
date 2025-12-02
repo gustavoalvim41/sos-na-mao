@@ -1,4 +1,4 @@
-import { supabase } from "../db";
+import { supabase } from "../../db";
 
 export default class SignOutService {
   static async signOut() {
