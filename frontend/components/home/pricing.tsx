@@ -1,79 +1,114 @@
+"use client";
+
 import { Check } from "lucide-react";
 
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-interface PricingProps {
-  heading?: string;
-  description?: string;
-  price?: string | number;
-  priceSuffix?: string;
-  features?: string[][];
-  buttonText?: string;
+interface PricingPlan {
+  name: string;
+  badge: string;
+  monthlyPrice: string;
+  features: string[];
+  buttonText: string;
+  isPopular?: boolean;
 }
 
-const defaultFeatures = [
-  [
-    "Pulseira NFC S.O.S. na Mão",
-    "Ativação imediata com ID exclusivo",
-    "Edite seus dados sempre que precisar, sem limites"
-  ],
-  [
-    "Suporte prioritário 24/7",
-    "Garantia premium de 30 dias",
-    "Tecnologia NFC de alta precisão"
-  ],
-  [
-    "Informações médicas sempre à mão",
-    "Gerenciamento completo de informações",
-    "Acesso instantâneo sem app ou bateria"
-  ],
-];
+interface Pricing4Props {
+  title?: string;
+  description?: string;
+  plans?: PricingPlan[];
+  className?: string;
+}
 
 const Pricing = ({
-  heading = "Sua pulseira de segurança começa aqui",
-  description = "Sem mensalidade. Sem assinatura.",
-  price = 70,
-  priceSuffix = "",
-  features = defaultFeatures,
-  buttonText = "Comprar Agora",
-}: PricingProps) => {
+  title = "Planos",
+  description = "Compra única - sem mensalidades.",
+  plans = [
+    {
+      name: "Individual",
+      badge: "Individual",
+      monthlyPrice: "R$ 70,00",
+      features: [
+        "1 Pulseira pronta para uso",
+        "Atualização ilimitada dos dados",
+        "Acesso rápido em emergências",
+        "Suporte 24/7"
+      ],
+      buttonText: "Escolher",
+    },
+    {
+      name: "Casal",
+      badge: "Duo / Casal",
+      monthlyPrice: "R$ 120,00",
+      features: [
+        "2 Pulseiras pronta para uso",
+        "Atualização ilimitada dos dados",
+        "Acesso rápido em emergências",
+        "Suporte 24/7"
+      ],
+      buttonText: "Escolher",
+      isPopular: true
+    },
+    {
+      name: "Família",
+      badge: "Família",
+      monthlyPrice: "R$ 260,00",
+      features: [
+        "4 Pulseiras pronta para uso",
+        "Atualização ilimitada dos dados",
+        "Acesso rápido em emergências",
+        "Suporte 24/7"
+      ],
+      buttonText: "Escolher",
+    },
+  ],
+  className = "",
+}: Pricing4Props) => {
   return (
-    <section className="py-16">
+    <section className={`py-32 ${className}`}>
       <div className="container">
-        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 text-center">
-          <h2 className="text-pretty text-4xl font-semibold lg:text-6xl">
-            {heading}
+        <div className="mx-auto flex max-w-7xl flex-col gap-6">
+          <h2 className="text-pretty text-4xl font-bold lg:text-6xl">
+            {title}
           </h2>
-          <p className="text-muted-foreground max-w-md lg:text-xl">
-            {description}
-          </p>
-          <div className="mx-auto flex w-full flex-col rounded-lg border p-6 sm:w-fit sm:min-w-80">
-            <div className="flex justify-center">
-              <span className="text-lg font-semibold">R$</span>
-              <span className="text-6xl font-semibold">{price}</span>
-              <span className="text-muted-foreground self-end">
-                {priceSuffix}
-              </span>
-            </div>
-            <div className="my-6">
-              {features.map((featureGroup, idx) => (
-                <div key={idx}>
-                  <ul className="flex flex-col gap-3">
-                    {featureGroup.map((feature, i) => (
+          <div className="flex flex-col justify-between gap-10 md:flex-row">
+            <p className="text-muted-foreground max-w-3xl lg:text-xl">
+              {description}
+            </p>
+          </div>
+          <div className="flex w-full flex-col items-stretch gap-6 md:flex-row">
+            {plans.map((plan) => (
+              <div
+                key={plan.name}
+                className={`flex w-full flex-col rounded-lg border p-6 text-left ${
+                  plan.isPopular ? "border-border border-primary" : ""
+                }`}
+              >
+                <Badge className="mb-8 block w-fit uppercase">
+                  {plan.badge}
+                </Badge>
+                <span className="text-4xl font-medium">
+                  {plan.monthlyPrice}
+                </span>
+                <Separator className="my-6" />
+                <div className="flex h-full flex-col justify-between gap-20">
+                  <ul className="text-muted-foreground space-y-4">
+                    {plan.features.map((feature, featureIndex) => (
                       <li
-                        key={i}
-                        className="flex items-center justify-between gap-4 text-sm font-medium"
+                        key={featureIndex}
+                        className="flex items-center gap-2"
                       >
-                        {feature} <Check className="inline size-4 shrink-0" />
+                        <Check className="size-4" />
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  {idx < features.length - 1 && <Separator className="my-6" />}
+                  <Button className="w-full">{plan.buttonText}</Button>
                 </div>
-              ))}
-            </div>
-            <Button>{buttonText}</Button>
+              </div>
+            ))}
           </div>
         </div>
       </div>
