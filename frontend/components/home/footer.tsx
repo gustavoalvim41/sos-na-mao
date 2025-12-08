@@ -32,18 +32,16 @@ const Footer = ({
       links: [
         { text: "Benefícios", url: "/" },
         { text: "Como Funciona", url: "/" },
-        { text: "Marketplace", url: "/" },
-        { text: "O Kit", url: "#" },
-        { text: "Para Empresas", url: "/" },
+        { text: "A Pulseira", url: "#" },
+        { text: "Planos", url: "/" },
         { text: "FAQ", url: "/" },
       ],
     },
     {
       title: "Social",
       links: [
-        { text: "Twitter", url: "/" },
         { text: "Instagram", url: "/" },
-        { text: "LinkedIn", url: "/" },
+        { text: "Tiktok", url: "/" },
       ],
     },
   ],
@@ -60,7 +58,7 @@ const Footer = ({
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-6">
             <div className="col-span-2 mb-8 lg:mb-0">
               <div className="flex items-center gap-2 lg:justify-start">
-                <LogoText className="text-xl">MotoID</LogoText>
+                <LogoText className="text-xl">S.O.S. na Mão</LogoText>
               </div>
               <p className="mt-4 font-bold">{tagline}</p>
             </div>
