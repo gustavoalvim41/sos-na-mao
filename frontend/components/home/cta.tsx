@@ -16,8 +16,8 @@ interface CtaProps {
 }
 
 const Cta = ({
-  heading = "Pronto para ter suas informações sempre acessíveis?",
-  description = "Adquira sua assinatura anual e tenha a tranquilidade de estar preparado para emergências. Sem complicação, sem bateria, sem app.",
+  heading = "Suas informações médicas sempre acessíveis.",
+  description = "Assine agora e tenha a tranquilidade de estar preparado. Sem bateria, sem app.",
   buttons = {
     primary: {
       text: "Quero minha pulseira",
