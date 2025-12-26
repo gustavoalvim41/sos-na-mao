@@ -8,22 +8,38 @@ export default function ProfilePage() {
     <div className="min-h-screen bg-background p-2 sm:p-4 md:p-8">
       <div className="max-w-2xl mx-auto flex flex-col gap-3 sm:gap-4 md:gap-6">
         <Card className="border-primary/50 bg-primary/5">
-          <CardHeader>
+          <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-primary text-base sm:text-lg">
               <AlertCircle className="size-5" />
               Atenção - Socorrista
             </CardTitle>
           </CardHeader>
-          <CardContent>
-            <p className="text-xs sm:text-sm leading-relaxed">
-              Em caso de emergência, utilize as informações médicas e contatos de emergência do usuário.
+          <CardContent className="pt-0">
+            <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
+              Em situação de emergência, utilize exclusivamente as informações abaixo para atendimento e contato com familiares.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="border-orange-500/50 bg-orange-500/5">
+          <CardHeader className="pb-2">
+            <CardTitle className="flex items-center gap-2 text-orange-600 dark:text-orange-500 text-base sm:text-lg">
+              <AlertCircle className="size-5" />
+              Confirme a Identidade
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="pt-0">
+            <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
+              Esta pulseira está registrada para:
+              António José Santos - 76 anos (Masculino)
+              Caso o portador não corresponda a estas características, considere possível troca de pulseira.
             </p>
           </CardContent>
         </Card>
 
         <Card className="relative">
-          <CardContent className="pt-4 sm:pt-6">
-            <div className="flex flex-col items-center gap-3 sm:gap-4">
+          <CardContent className="pt-3 sm:pt-4 pb-3 sm:pb-4">
+            <div className="flex flex-col items-center gap-2 sm:gap-3">
               <CardTitle className="text-lg sm:text-xl md:text-2xl">
                 Informações Pessoais
               </CardTitle>
@@ -47,12 +63,12 @@ export default function ProfilePage() {
           </CardContent>
         </Card>
         <Card>
-          <CardHeader className="pb-3">
+          <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-foreground text-base sm:text-lg">
               Contatos de Emergência
             </CardTitle>
           </CardHeader>
-          <CardContent className="space-y-3 sm:space-y-4">
+          <CardContent className="space-y-2 sm:space-y-3 pt-0">
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-foreground/5 rounded-lg p-3 sm:p-4">
               <div className="flex-1">
                 <p className="font-semibold text-sm sm:text-base">Filha - Maria Santos</p>
@@ -86,10 +102,10 @@ export default function ProfilePage() {
           </CardContent>
         </Card>
         <Card>
-          <CardHeader className="pb-3">
+          <CardHeader className="pb-2">
             <CardTitle className="text-base sm:text-lg">Informações Médicas</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-3 sm:space-y-4">
+          <CardContent className="space-y-2 sm:space-y-3 pt-0">
             <div className="bg-foreground/5 rounded-lg p-3 sm:p-4">
               <p className="font-semibold mb-1 text-sm sm:text-base">Tipo Sanguíneo:</p>
               <p className="text-xs sm:text-sm text-muted-foreground">O+</p>
@@ -116,12 +132,11 @@ export default function ProfilePage() {
             </div>
           </CardContent>
         </Card>
-        {/* Sobre o Sistema */}
         <Card className="border-muted">
-          <CardHeader className="pb-3">
+          <CardHeader className="pb-2">
             <CardTitle className="text-base sm:text-lg">Sobre o S.O.S. na Mão</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-3">
+          <CardContent className="pt-0">
             <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
               Identificação médica por pulseira NFC. Informações cadastradas pelo usuário ou por um responsável.
             </p>
