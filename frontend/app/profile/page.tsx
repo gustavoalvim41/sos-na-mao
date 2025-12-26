@@ -11,12 +11,12 @@ export default function ProfilePage() {
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-primary text-base sm:text-lg">
               <AlertCircle className="size-5" />
-              Atenção - Socorrista
+              Socorrista: Leia Isto Primeiro
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-0">
             <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
-              Em situação de emergência, utilize exclusivamente as informações abaixo para atendimento e contato com familiares.
+              Esta pulseira contém informações médicas essenciais. Use os dados abaixo para prestar socorro e contactar familiares.
             </p>
           </CardContent>
         </Card>
@@ -25,14 +25,13 @@ export default function ProfilePage() {
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-orange-600 dark:text-orange-500 text-base sm:text-lg">
               <AlertCircle className="size-5" />
-              Confirme a Identidade
+              Antes de Prosseguir
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-0">
             <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
-              Esta pulseira está registrada para:
-              António José Santos - 76 anos (Masculino)
-              Caso o portador não corresponda a estas características, considere possível troca de pulseira.
+              <strong>Confirme:</strong> Esta pulseira pertence a <strong>António José Santos, 76 anos, Masculino</strong>.<br />
+              Se o portador for diferente, pode ter havido troca de pulseiras.
             </p>
           </CardContent>
         </Card>
@@ -41,7 +40,7 @@ export default function ProfilePage() {
           <CardContent className="pt-3 sm:pt-4 pb-3 sm:pb-4">
             <div className="flex flex-col items-center gap-2 sm:gap-3">
               <CardTitle className="text-lg sm:text-xl md:text-2xl">
-                Informações Pessoais
+                Identificação do Portador
               </CardTitle>
               <Avatar className="size-24 sm:size-28 md:size-32">
                 <AvatarImage src="/foto-idoso.jpg" alt="António" />
@@ -103,7 +102,7 @@ export default function ProfilePage() {
         </Card>
         <Card>
           <CardHeader className="pb-2">
-            <CardTitle className="text-base sm:text-lg">Informações Médicas</CardTitle>
+            <CardTitle className="text-base sm:text-lg">Informações Médicas Essenciais</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2 sm:space-y-3 pt-0">
             <div className="bg-foreground/5 rounded-lg p-3 sm:p-4">
@@ -127,19 +126,9 @@ export default function ProfilePage() {
             </div>
 
             <div className="bg-foreground/5 rounded-lg p-3 sm:p-4">
-              <p className="font-semibold mb-1 text-sm sm:text-base">Observações:</p>
-              <p className="text-xs sm:text-sm text-muted-foreground">Porta-marca-passos implantado. Em caso de emergência cardíaca, contactar imediatamente o 192 (SAMU). Não pode fazer ressonância magnética.</p>
+              <p className="font-semibold mb-1 text-sm sm:text-base">Importante:</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Tem marca-passo. NÃO pode fazer ressonância. Em crise cardíaca, ligue <strong>192 (SAMU)</strong>.</p>
             </div>
-          </CardContent>
-        </Card>
-        <Card className="border-muted">
-          <CardHeader className="pb-2">
-            <CardTitle className="text-base sm:text-lg">Sobre o S.O.S. na Mão</CardTitle>
-          </CardHeader>
-          <CardContent className="pt-0">
-            <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
-              Identificação médica por pulseira NFC. Informações cadastradas pelo usuário ou por um responsável.
-            </p>
           </CardContent>
         </Card>
       </div>
