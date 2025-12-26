@@ -26,7 +26,7 @@ const Hero = () => {
               <Link href="/login">Garanta seu S.O.S. na Mão</Link>
             </Button>
             <Button asChild variant="outline" className="w-full sm:w-auto">
-              <Link href="/">
+              <Link href="/profile">
                 Saiba mais
                 <ArrowRight className="size-4" />
               </Link>

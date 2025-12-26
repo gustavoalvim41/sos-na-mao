@@ -7,27 +7,27 @@ const Process = () => {
   const process = [
     {
       step: "01",
-      title: "Receba sua pulseira",
+      title: "Assine o S.O.S. na Mão",
       description:
-        "Ela chega totalmente vinculada ao seu ID, pronta para ser usada sem qualquer configuração inicial.",
+        "Ao contratar a assinatura anual, você garante cuidado e proteção constantes para quem você ama, mesmo quando não pode estar por perto.",
     },
     {
       step: "02",
-      title: "Complete suas informações",
+      title: "Cadastre as informações",
       description:
-        "Acesse a plataforma e preencha seus dados pessoais e médicos para garantir que tudo esteja correto e completo.",
+        "Acesse a plataforma e preencha dados médicos, contatos de emergência e observações importantes.",
     },
     {
       step: "03",
       title: "Mantenha tudo atualizado",
       description:
-        "Revise e atualize suas informações sempre que necessário, assegurando que os dados exibidos sejam sempre atuais.",
+        "Sempre que algo mudar, você pode atualizar as informações com facilidade, garantindo um cuidado mais seguro.",
     },
     {
       step: "04",
       title: "Use no dia a dia",
       description:
-        "Use sua pulseira normalmente; em emergências, um celular com NFC pode acessar suas informações instantaneamente.",
+        "A pulseira acompanha a rotina. Em uma emergência, basta encostar um celular para acessar os dados.",
     },
   ];
 
@@ -42,8 +42,7 @@ const Process = () => {
               <Asterisk className="absolute -right-2 -top-2 size-5 text-red-500 md:size-10 lg:-right-14" />
             </div>
             <p className="text-foreground/50 text-base">
-              Um passo a passo para garantir acesso rápido às suas informações
-              quando mais importam.
+              Um sistema simples, pensado para acompanhar a rotina e oferecer cuidado nos momentos mais importantes.
             </p>
             <Button
               variant="ghost"

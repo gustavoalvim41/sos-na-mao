@@ -29,37 +29,37 @@ const Feature = ({
     {
       heading: "Rapidez",
       description:
-        "Socorristas acessam suas informações médicas de forma rápida e prática.",
+        "Socorristas acessam informações médicas e contatos de emergência em segundos.",
       icon: <Zap className="size-6" />,
     },
     {
       heading: "Segurança",
       description:
-        "Apenas os dados essenciais são exibidos, protegendo sua privacidade.",
+        "Mesmo quando você não está por perto, sabe que as informações certas estarão disponíveis.",
       icon: <Lock className="size-6" />,
     },
     {
       heading: "Prevenção",
       description:
-        "Alergias e condições médicas ficam visíveis para evitar erros no atendimento.",
+        "Alergias, condições médicas e observações importantes ajudam a evitar erros no atendimento.",
       icon: <ShieldAlert className="size-6" />,
     },
     {
-      heading: "Praticidade",
+      heading: "Simplicidade",
       description:
-        "Funciona de forma simples, sem apps, cadastros ou complicações.",
+        "Funciona sem recarga, sem aplicativos e sem etapas complicadas.",
       icon: <Package className="size-6" />,
     },
     {
-      heading: "Identificação",
+      heading: "Identificação contínua",
       description:
-        "Mesmo inconsciente, seus dados de emergência podem ser acessados facilmente.",
+        "Mesmo inconsciente, a pessoa continua identificada e assistida corretamente.",
       icon: <UserCheck className="size-6" />,
     },
     {
-      heading: "Confiança",
+      heading: "Segurança dos dados",
       description:
-        "Informações organizadas ajudam os socorristas a agir com precisão e segurança.",
+        "Somente informações essenciais são exibidas, respeitando a privacidade.",
       icon: <ThumbsUp className="size-6" />,
     },
   ],
