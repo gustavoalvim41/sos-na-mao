@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Phone, AlertCircle } from "lucide-react";
+import { Phone, AlertCircle, AlertTriangle } from "lucide-react";
 
 export default function ProfilePage() {
   return (
@@ -24,7 +24,7 @@ export default function ProfilePage() {
         <Card className="border-orange-500/50 bg-orange-500/5">
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-orange-600 dark:text-orange-500 text-base sm:text-lg">
-              <AlertCircle className="size-5" />
+              <AlertTriangle className="size-5" />
               Antes de Prosseguir
             </CardTitle>
           </CardHeader>
@@ -126,8 +126,8 @@ export default function ProfilePage() {
             </div>
 
             <div className="bg-foreground/5 rounded-lg p-3 sm:p-4">
-              <p className="font-semibold mb-1 text-sm sm:text-base">Importante:</p>
-              <p className="text-xs sm:text-sm text-muted-foreground">Tem marca-passo. NÃO pode fazer ressonância. Em crise cardíaca, ligue <strong>192 (SAMU)</strong>.</p>
+              <p className="font-semibold mb-1 text-sm sm:text-base">Observações:</p>
+              <p className="text-xs sm:text-sm text-muted-foreground">Tem marca-passo. NÃO pode fazer ressonância.</p>
             </div>
           </CardContent>
         </Card>

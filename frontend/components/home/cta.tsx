@@ -16,11 +16,11 @@ interface CtaProps {
 }
 
 const Cta = ({
-  heading = "Tenha sua segurança sempre à mão.",
-  description = "Adquira sua pulseira NFC e garanta que, em qualquer emergência, suas informações essenciais sejam acessadas em segundos.",
+  heading = "Pronto para ter suas informações sempre acessíveis?",
+  description = "Adquira sua assinatura anual e tenha a tranquilidade de estar preparado para emergências. Sem complicação, sem bateria, sem app.",
   buttons = {
     primary: {
-      text: "Quero a Minha",
+      text: "Quero minha pulseira",
     },
   },
 }: CtaProps) => {

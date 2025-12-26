@@ -13,59 +13,59 @@ const Compare = () => {
     <section className="py-16">
       <div className="container">
         <h2 className="mb-4 text-center text-4xl font-semibold">
-          Comparativo
+          Por que escolher o S.O.S. na Mão?
         </h2>
         <p className="text-muted-foreground mb-8 text-center">
-          Descubra como nosso produto se diferencia das pulseiras genéricas.
+          Veja as diferenças entre uma solução profissional e pulseiras genéricas.
         </p>
         <div className="mx-auto max-w-4xl overflow-x-auto">
           <Table className="rounded border text-left shadow-lg">
             <TableHeader>
               <TableRow>
-                <TableHead></TableHead>
-                <TableHead className="bg-muted px-6 py-4 font-semibold">
+                <TableHead className="w-1/3"></TableHead>
+                <TableHead className="bg-muted w-1/3 px-6 py-4 text-center font-semibold">
                   S.O.S. na Mão
                 </TableHead>
-                <TableHead className="px-6 py-4 font-semibold">
+                <TableHead className="w-1/3 px-6 py-4 text-center font-semibold">
                   Pulseiras Genéricas
                 </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody className="text-foreground">
               <TableRow>
-                <TableCell className="px-6 py-4">Acesso a informações médicas</TableCell>
-                <TableCell className="bg-muted px-6 py-4">Instantâneo via NFC</TableCell>
-                <TableCell className="px-6 py-4">Limitado ou inexistente</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Acesso às informações</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">Instantâneo via NFC</TableCell>
+                <TableCell className="px-6 py-4 text-center">Limitado ou inexistente</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="px-6 py-4">Atualização dos dados</TableCell>
-                <TableCell className="bg-muted px-6 py-4">Online e ilimitada</TableCell>
-                <TableCell className="px-6 py-4">Difícil ou não disponível</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Atualização dos dados</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">Online e ilimitada</TableCell>
+                <TableCell className="px-6 py-4 text-center">Difícil ou não disponível</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="px-6 py-4">Segurança e privacidade</TableCell>
-                <TableCell className="bg-muted px-6 py-4">Somente dados essenciais</TableCell>
-                <TableCell className="px-6 py-4">Sem controle sobre informações</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Funciona sem app</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">✓ Sim</TableCell>
+                <TableCell className="px-6 py-4 text-center">✗ Não</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="px-6 py-4">Funciona sem app</TableCell>
-                <TableCell className="bg-muted px-6 py-4">Sim</TableCell>
-                <TableCell className="px-6 py-4">Na maioria, não</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Funciona sem bateria</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">✓ Sim</TableCell>
+                <TableCell className="px-6 py-4 text-center">Variável</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="px-6 py-4">Suporte</TableCell>
-                <TableCell className="bg-muted px-6 py-4">24/7</TableCell>
-                <TableCell className="px-6 py-4">Normalmente ausente</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Privacidade controlada</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">Somente dados essenciais</TableCell>
+                <TableCell className="px-6 py-4 text-center">Sem controle</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="px-6 py-4">Durabilidade</TableCell>
-                <TableCell className="bg-muted px-6 py-4">Alta</TableCell>
-                <TableCell className="px-6 py-4">Variável</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Suporte técnico</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">Disponível</TableCell>
+                <TableCell className="px-6 py-4 text-center">Ausente</TableCell>
               </TableRow>
               <TableRow>
-                <TableCell className="px-6 py-4">Confiança em emergências</TableCell>
-                <TableCell className="bg-muted px-6 py-4">Testada e confiável</TableCell>
-                <TableCell className="px-6 py-4">Não testada</TableCell>
+                <TableCell className="px-6 py-4 font-medium">Durabilidade</TableCell>
+                <TableCell className="bg-muted px-6 py-4 text-center">Alta qualidade</TableCell>
+                <TableCell className="px-6 py-4 text-center">Variável</TableCell>
               </TableRow>
             </TableBody>
           </Table>

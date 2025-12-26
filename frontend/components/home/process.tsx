@@ -9,25 +9,25 @@ const Process = () => {
       step: "01",
       title: "Assine o S.O.S. na Mão",
       description:
-        "Ao contratar a assinatura anual, você garante cuidado e proteção constantes para quem você ama, mesmo quando não pode estar por perto.",
+        "Ao contratar a assinatura anual, você recebe sua pulseira com chip NFC e acesso à plataforma de gerenciamento.",
     },
     {
       step: "02",
       title: "Cadastre as informações",
       description:
-        "Acesse a plataforma e preencha dados médicos, contatos de emergência e observações importantes.",
+        "Preencha contatos de emergência, alergias, condições médicas, medicamentos e observações importantes para o atendimento.",
     },
     {
       step: "03",
       title: "Mantenha tudo atualizado",
       description:
-        "Sempre que algo mudar, você pode atualizar as informações com facilidade, garantindo um cuidado mais seguro.",
+        "Atualize seus dados quando necessário, direto pela plataforma — de forma ilimitada durante toda a assinatura.",
     },
     {
       step: "04",
       title: "Use no dia a dia",
       description:
-        "A pulseira acompanha a rotina. Em uma emergência, basta encostar um celular para acessar os dados.",
+        "Em uma emergência, basta encostar um celular na pulseira para acessar suas informações e contatos instantaneamente.",
     },
   ];
 
@@ -42,14 +42,14 @@ const Process = () => {
               <Asterisk className="absolute -right-2 -top-2 size-5 text-red-500 md:size-10 lg:-right-14" />
             </div>
             <p className="text-foreground/50 text-base">
-              Um sistema simples, pensado para acompanhar a rotina e oferecer cuidado nos momentos mais importantes.
+              Um sistema simples que funciona quando você mais precisa.
             </p>
             <Button
               variant="ghost"
               className="flex items-center justify-start gap-2"
             >
               <CornerDownRight className="text-red-500" />
-              Preparar Meu S.O.S.
+              Quero minha pulseira
             </Button>
           </div>
           <ul className="lg:pl-22 relative col-span-4 w-full">

@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <div className="hidden md:flex w-full justify-end">
         <div className="bg-foreground/5 w-200 p-5 border border-border flex justify-center">
-          <p className="text-muted-foreground lg:text-md italic">Acesso imediato às suas informações médicas quando cada segundo faz a diferença.</p>
+          <p className="text-muted-foreground lg:text-md italic">Prevenção simples para você viver mais tranquilo.</p>
         </div>
       </div>
       <Feature />

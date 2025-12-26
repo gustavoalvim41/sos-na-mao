@@ -16,14 +16,14 @@ const Hero = () => {
             <ArrowUpRight className="ml-2 size-4" />
           </Badge>
           <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
-            Em um acidente, cada segundo conta.
+            Suas informações médicas ao alcance de qualquer celular.
           </h1>
           <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
-            Tenha suas informações médicas à mão e salve sua vida. Socorristas acessam seus dados em segundos.
+            O S.O.S. na Mão mostra suas informações médicas com um toque de celular. Sem senha, sem app, sem complicação.
           </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
             <Button asChild className="w-full sm:w-auto">
-              <Link href="/login">Garanta seu S.O.S. na Mão</Link>
+              <Link href="/login">Quero minha pulseira</Link>
             </Button>
             <Button asChild variant="outline" className="w-full sm:w-auto">
               <Link href="/profile">

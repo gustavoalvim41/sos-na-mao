@@ -29,41 +29,41 @@ const Feature = ({
     {
       heading: "Rapidez",
       description:
-        "Socorristas acessam informações médicas e contatos de emergência em segundos.",
+        "Socorristas acessam suas informações médicas e contatos de emergência em segundos.",
       icon: <Zap className="size-6" />,
-    },
-    {
-      heading: "Segurança",
-      description:
-        "Mesmo quando você não está por perto, sabe que as informações certas estarão disponíveis.",
-      icon: <Lock className="size-6" />,
     },
     {
       heading: "Prevenção",
       description:
-        "Alergias, condições médicas e observações importantes ajudam a evitar erros no atendimento.",
-      icon: <ShieldAlert className="size-6" />,
+        "Alergias, condições e medicamentos visíveis na hora certa evitam erros no atendimento.",
+      icon: <Lock className="size-6" />,
     },
     {
-      heading: "Simplicidade",
+      heading: "Funciona sempre",
       description:
-        "Funciona sem recarga, sem aplicativos e sem etapas complicadas.",
-      icon: <Package className="size-6" />,
+        "Sem recarga, sem aplicativo, sem depender de bateria ou internet.",
+      icon: <ShieldAlert className="size-6" />,
     },
     {
       heading: "Identificação contínua",
       description:
-        "Mesmo inconsciente, a pessoa continua identificada e assistida corretamente.",
+        "Mesmo inconsciente, você continua identificado e com as informações acessíveis.",
+      icon: <Package className="size-6" />,
+    },
+    {
+      heading: "Tranquilidade para quem cuida",
+      description:
+        "Mesmo longe, você sabe que quem precisar terá acesso ao essencial.",
       icon: <UserCheck className="size-6" />,
     },
     {
-      heading: "Segurança dos dados",
+      heading: "Privacidade protegida",
       description:
-        "Somente informações essenciais são exibidas, respeitando a privacidade.",
+        "Apenas informações médicas essenciais são exibidas. Nada além do necessário.",
       icon: <ThumbsUp className="size-6" />,
     },
   ],
-  buttonText = "Tenha seu S.O.S. na Mão",
+  buttonText = "Quero minha pulseira",
   buttonUrl = "/login",
 }: Feature43Props) => {
   return (

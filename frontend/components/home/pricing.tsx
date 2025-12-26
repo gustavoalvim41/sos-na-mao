@@ -24,12 +24,12 @@ interface Pricing4Props {
 
 const Pricing = ({
   title = "Planos",
-  description = "Compra única - sem mensalidades.",
+  description = "Assinatura anual com pagamento parcelado em até 12x.",
   plans = [
     {
       name: "Individual",
       badge: "Individual",
-      monthlyPrice: "R$ 70,00",
+      monthlyPrice: "12x R$ 19,90",
       features: [
         "1 Pulseira pronta para uso",
         "Atualização ilimitada dos dados",
@@ -40,10 +40,10 @@ const Pricing = ({
     },
     {
       name: "Casal",
-      badge: "Duo / Casal",
-      monthlyPrice: "R$ 120,00",
+      badge: "Casal",
+      monthlyPrice: "12x R$ 39,90",
       features: [
-        "2 Pulseiras pronta para uso",
+        "2 Pulseiras prontas para uso",
         "Atualização ilimitada dos dados",
         "Acesso rápido em emergências",
         "Suporte 24/7"
@@ -54,9 +54,9 @@ const Pricing = ({
     {
       name: "Família",
       badge: "Família",
-      monthlyPrice: "R$ 260,00",
+      monthlyPrice: "12x R$ 59,70",
       features: [
-        "4 Pulseiras pronta para uso",
+        "3 Pulseiras prontas para uso",
         "Atualização ilimitada dos dados",
         "Acesso rápido em emergências",
         "Suporte 24/7"
