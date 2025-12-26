@@ -16,7 +16,7 @@ export default function ProfilePage() {
           </CardHeader>
           <CardContent>
             <p className="text-xs sm:text-sm leading-relaxed">
-              As informações abaixo são essenciais para o atendimento de emergência e para o contato com familiares do portador.
+              Informações essenciais para o atendimento de emergência e contato com familiares do portador.
             </p>
           </CardContent>
         </Card>
@@ -123,8 +123,8 @@ export default function ProfilePage() {
           </CardHeader>
           <CardContent className="space-y-3">
             <p className="text-xs sm:text-sm leading-relaxed text-muted-foreground">
-              Sistema de identificação médica via pulseira NFC. Informações cadastradas 
-              pelo usuário em plataforma segura e criptografada (LGPD).
+              Identificação médica por pulseira NFC. Informações cadastradas 
+              pelo usuário.
             </p>
           </CardContent>
         </Card>
