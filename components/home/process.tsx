@@ -7,27 +7,27 @@ const Process = () => {
   const process = [
     {
       step: "01",
-      title: "Assine o S.O.S. na Mão",
+      title: "Receba seu kit",
       description:
-        "Ao contratar a assinatura anual, você recebe sua pulseira com chip NFC e acesso à plataforma de gerenciamento.",
+        "Você adquire o kit com a pulseira e recebe em casa. Sem complicação.",
     },
     {
       step: "02",
       title: "Cadastre as informações",
       description:
-        "Preencha contatos de emergência, alergias, condições médicas, medicamentos e observações importantes para o atendimento.",
+        "Acesse a plataforma e registre seus dados médicos, contatos de emergência e informações importantes. Leva apenas alguns minutos.",
     },
     {
       step: "03",
-      title: "Mantenha tudo atualizado",
+      title: "Atualize quando precisar",
       description:
-        "Atualize seus dados quando necessário, direto pela plataforma — de forma ilimitada durante toda a assinatura.",
+        "Entre na plataforma sempre que suas informações mudarem. Sem limite de atualizações, sem custo adicional.",
     },
     {
       step: "04",
-      title: "Use no dia a dia",
+      title: "Use todos os dias",
       description:
-        "Em uma emergência, basta encostar um celular na pulseira para acessar suas informações e contatos instantaneamente.",
+        "Vista a pulseira e siga sua rotina. Ela funciona de forma passiva e estará pronta quando você precisar.",
     },
   ];
 

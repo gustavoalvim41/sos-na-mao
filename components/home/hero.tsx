@@ -12,14 +12,14 @@ const Hero = () => {
       <div className="grid items-center gap-8 lg:grid-cols-2">
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
           <Badge variant="outline">
-            ⛑️ Sua Vida em Primeiro Lugar
+            ⛑️ Plano de emergência no pulso
             <ArrowUpRight className="ml-2 size-4" />
           </Badge>
           <h1 className="my-6 text-pretty text-4xl font-bold lg:text-6xl">
-            Suas informações médicas ao alcance de qualquer celular.
+            Suas informações médicas acessíveis em segundos.
           </h1>
           <p className="text-muted-foreground mb-8 max-w-xl lg:text-xl">
-            O S.O.S. na Mão mostra suas informações médicas com um toque de celular. Sem senha, sem app, sem complicação.
+            Um plano de emergência pessoal que funciona quando você não pode falar. Sem app, sem bateria, sem mensalidade.
           </p>
           <div className="flex w-full flex-col justify-center gap-2 sm:flex-row lg:justify-start">
             <Button asChild className="w-full sm:w-auto">

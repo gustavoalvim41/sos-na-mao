@@ -20,7 +20,6 @@ export default function ProfilePage() {
             </p>
           </CardContent>
         </Card>
-
         <Card className="border-orange-500/50 bg-orange-500/5">
           <CardHeader className="pb-2">
             <CardTitle className="flex items-center gap-2 text-orange-600 dark:text-orange-500 text-base sm:text-lg">
@@ -35,7 +34,6 @@ export default function ProfilePage() {
             </p>
           </CardContent>
         </Card>
-
         <Card className="relative">
           <CardContent className="pt-3 sm:pt-4 pb-3 sm:pb-4">
             <div className="flex flex-col items-center gap-2 sm:gap-3">
